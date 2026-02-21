@@ -1,2 +1,41 @@
-# Impact-of-Caption-Length-and-Hashtag-Count-on-Engagement
-This repository provides all materials for the study “The Impact of Caption Length and Hashtag Count on Engagement in Instagram Posts by Social Movements.” It includes raw and cleaned data, Python preprocessing, JASP files, stimuli, questionnaires, and full documentation for reproducibility.
+# Instagram Survey Data Processing Pipeline
+
+This repository processes survey data from an Instagram-related study, performing preprocessing, statistics, standardization, and visualizations. It's structured for sequential execution and is beginner-friendly with detailed comments.
+
+## Directory Structure
+- **data/**: Place input files here (e.g., original.xlsx). Outputs like CSVs will be saved here.
+- **src/**: Python scripts to run in sequence.
+- **figures/**: Generated plots from visualizations.py.
+
+## Setup Instructions
+1. Clone the repo: `git clone https://github.com/yourusername/instagram-survey-pipeline.git`
+2. Navigate to the repo: `cd instagram-survey-pipeline`
+3. Install dependencies: `pip install -r requirements.txt`
+4. Place input files in /data/:
+   - original.xlsx: The original survey Excel file.
+   - complete_data.csv: Raw data for initial visualizations (if different from merged outputs).
+   - dataset.csv: Data for result graphs (if different from FINAL_data_for_regression.csv).
+5. Run scripts in sequence from the root directory:
+   - `python src/preprocessing.py` (Generates processed CSVs in /data/)
+   - `python src/statistics.py` (Prints stats; uses original.xlsx)
+   - `python src/standardization.py` (Generates FINAL_data_for_regression.csv in /data/)
+   - `python src/visualizations.py` (Generates plots in /figures/)
+6. View outputs: CSVs in /data/, plots in /figures/, and console prints for stats.
+
+## Script Sequence and Expectations
+- **preprocessing.py**: 
+  - Input: data/original.xlsx
+  - Output: Multiple CSVs in /data/ (e.g., IG_only.csv, merged_data_with_all_columns.csv)
+  - Purpose: Cleans, filters, adds derived columns, merges data.
+- **statistics.py**: 
+  - Input: data/original.xlsx
+  - Output: Console prints (stats for thesis Section 4.4)
+  - Purpose: Computes descriptive stats.
+- **standardization.py**: 
+  - Input: data/merged_data_with_all_columns.csv (from preprocessing)
+  - Output: data/FINAL_data_for_regression.csv
+  - Purpose: Standardizes data for regression.
+- **visualizations.py**: 
+  - Input: Various CSVs from prior steps (e.g., complete_data.csv, dataset.csv)
+  - Output: PNG/PDF plots in /figures/
+  - Purpose: Generates graphs for analysis and results.
