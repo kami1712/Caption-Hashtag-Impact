@@ -8,8 +8,8 @@ This repository processes survey data from an Instagram-related study, performin
 - **figures/**: Generated plots from visualizations.py.
 
 ## Setup Instructions
-1. Clone the repo: `git clone https://github.com/yourusername/instagram-survey-pipeline.git`
-2. Navigate to the repo: `cd instagram-survey-pipeline`
+1. Clone the repo: `git clone https://github.com/kami1712/Impact-of-Caption-Length-and-Hashtag-Count-on-Engagement.git`
+2. Navigate to the repo: `cd Impact-of-Caption-Length-and-Hashtag-Count-on-Engagement`
 3. Install dependencies: `pip install -r requirements.txt`
 4. Place input files in /data/:
    - original.xlsx: The original survey Excel file.
