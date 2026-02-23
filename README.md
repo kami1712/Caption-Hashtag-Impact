@@ -17,7 +17,7 @@ This repository processes survey data from an Instagram-related study, performin
    - `python src/preprocessing.py` (Generates processed CSVs in /data/)
    - `python src/statistics.py` (Prints stats; uses original.xlsx)
    - `python src/standardization.py` (Generates FINAL_data_for_regression.csv in /data/)
-   - `python src/visualizations.py` (Generates plots in /figures/)
+   - `python src/visualization.py` (Generates plots in /figures/)
 6. View outputs: CSVs in /data/, plots in /figures/, and console prints for stats.
 
 ## Script Sequence and Expectations
