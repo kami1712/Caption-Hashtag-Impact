@@ -9,7 +9,7 @@ This repository processes survey data from an Instagram-related study, performin
 
 ## Setup Instructions
 1. Clone the repo: `git clone https://github.com/kami1712/Caption-Hashtag-Impact.git`
-2. Navigate to the repo: `cd Caption-Hashtag-Impact.git`
+2. Navigate to the repo: `cd Caption-Hashtag-Impact`
 3. Install dependencies: `pip install -r requirements.txt`
 4. Place input files in /data/:
    - original.xlsx: The original survey Excel file.
