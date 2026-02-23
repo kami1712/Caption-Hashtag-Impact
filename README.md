@@ -13,8 +13,6 @@ This repository processes survey data from an Instagram-related study, performin
 3. Install dependencies: `pip install -r requirements.txt`
 4. Place input files in /data/:
    - original.xlsx: The original survey Excel file.
-   - complete_data.csv: Raw data for initial visualizations (if different from merged outputs).
-   - dataset.csv: Data for result graphs (if different from FINAL_data_for_regression.csv).
 5. Run scripts in sequence from the root directory:
    - `python src/preprocessing.py` (Generates processed CSVs in /data/)
    - `python src/statistics.py` (Prints stats; uses original.xlsx)
